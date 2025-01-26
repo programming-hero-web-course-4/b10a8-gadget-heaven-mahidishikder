@@ -21,6 +21,12 @@ function Header() {
   >
     Dashboard
   </NavLink>
+  <NavLink 
+    to={`/contact`} 
+    className={({ isActive }) => isActive ? "mx-8 underline-offset-8 underline text-white text-lg" : "mx-8 text-white text-lg"}
+  >
+    Contact
+  </NavLink>
 </>;
 
   return (

@@ -11,12 +11,15 @@ import Statistics from './pages/Statistics';
 import Dashboard from './pages/Dashboard';
 import TechCard from './components/TechCard/TechCard';
 import Details from './components/Details/Details';
+import Contact from './components/Contact/Contact';
+import Error from './pages/Error';
 
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement:<Error></Error>,
     element: <Roots></Roots>,
     children:[
       {
@@ -49,6 +52,10 @@ const router = createBrowserRouter([
     {
       path:'/dashboard',
       element:<Dashboard></Dashboard>
+    },
+    {
+      path:'/contact',
+      element:<Contact></Contact>
     }
   ]
   },
